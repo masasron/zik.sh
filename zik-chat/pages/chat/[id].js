@@ -440,7 +440,7 @@ export default function Chat() {
                             {model && <label>
                                 {MODEL_VALUE_TO_NAME[model] || model}
                                 {activePlugin && <>
-                                    <Tooltip text={activePlugin.name}>
+                                    <Tooltip text={activePlugin.name_for_human}>
                                         <div className="active-plugin"><img src={activePlugin.logo_url} /></div>
                                     </Tooltip>
                                 </>}
