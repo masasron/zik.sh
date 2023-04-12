@@ -24,3 +24,29 @@ machine. Once you have installed Git and Docker, you can follow these steps:
 
 This will start the Zik server and you can access it by opening a web browser
 and navigating to http://localhost
+
+## Features
+
+### Message stream
+
+...
+
+### Conversation trees
+
+...
+
+## Plugins
+
+...
+
+### TODO example
+
+...
+
+### Create a plugin
+
+...
+
+### Test your plugin
+
+...
