@@ -35,6 +35,14 @@ and navigating to http://localhost
 
 ...
 
+### Chat History
+
+...
+
+### Plugins Managment
+
+...
+
 ## Plugins
 
 ...
