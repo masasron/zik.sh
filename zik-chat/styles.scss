@@ -990,11 +990,16 @@ body,
 }
 
 .welcome-message {
-    text-align: center;
     width: 80%;
+    margin: auto;
     padding: 15px;
     padding-top: 15%;
-    margin: auto;
+    text-align: center;
+
+    @media (max-width: $mobile-breakpoint) {
+        width: 95%;
+        padding-top: 10%;
+    }
 
     p {
         font-size: 15px;
