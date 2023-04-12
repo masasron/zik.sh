@@ -318,7 +318,8 @@ export default function Chat() {
 
     function establishConnection() {
         return new Promise((resolve, reject) => {
-            const websocketUrl = `${settings?.server_url}?model=${encodeURIComponent(model)}&openai_api_key=${encodeURIComponent(settings?.openai_api_key || "")}`;
+            const server = settings?.server_url || "wss://zik.sh/api";
+            const websocketUrl = `${server}?model=${encodeURIComponent(model)}&openai_api_key=${encodeURIComponent(settings?.openai_api_key || "")}`;
             if (socket === null || socket?.readyState !== WebSocket.OPEN) {
                 let newSocket = new WebSocket(websocketUrl);
 
@@ -326,7 +327,7 @@ export default function Chat() {
                 let timeout = setTimeout(() => {
                     newSocket.close();
                     setSocket(null);
-                    setStreamedMessage(`Failed to connect to websocket server, please make sure "${settings?.server_url}" is running.`);
+                    setStreamedMessage(`Failed to connect to websocket server, please make sure "${server}" is running.`);
                     setMessageError(true);
                     reject();
                 }, 4000);
@@ -469,7 +470,7 @@ export default function Chat() {
                         <div className="welcome-message">
                             <h1>Welcome!</h1>
                             <p>Zik.sh is an open source ChatGPT-like user interface, unaffiliated with OpenAI.</p>
-                            <p>Join us in <a target="_blank" href="https://github.com/masasron/zik.sh">contributing to this project</a> and learn how to <a target="_blank" href="https://github.com/masasron/zik.sh/">develop your own custom plugins!</a></p>
+                            <p>Join us in <a target="_blank" href="https://github.com/zik-sh/zik.sh">contributing to this project</a> and learn how to <a target="_blank" href="https://github.com/zik-sh/zik.sh">develop your own custom plugins!</a></p>
                         </div>
                     </>}
                     {messages && messages.map((msg, index) => <>
