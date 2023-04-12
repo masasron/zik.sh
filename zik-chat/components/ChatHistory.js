@@ -50,10 +50,10 @@ export default function ChatHistory(props) {
             <label contentEditable={editItem === item.uuid}>{item.title}</label>
             <div style={{ flex: 1 }} />
             {item.uuid === chatId && editItem === null && itemToBeDeleted === null && <>
-                <button onClick={() => setEditItem(item.uuid)} className="edit">
+                <button onClick={(e) => (setEditItem(item.uuid), e.stopPropagation())} className="edit">
                     <span className="material-symbols-outlined">edit</span>
                 </button>
-                <button onClick={() => setItemToBeDeleted(item.uuid)} className="delete">
+                <button onClick={(e) => (setItemToBeDeleted(item.uuid), e.stopPropagation())} className="delete">
                     <span className="material-symbols-outlined">delete</span>
                 </button>
             </>}
