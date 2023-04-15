@@ -53,6 +53,15 @@ async function uninstallPlugin(name) {
 }
 
 async function installPlugin(plugin) {
+    let warning = "Are you sure you want to install this plugin?";
+    if (plugin.name_for_human === "TODO Plugin") {
+        warning = "\nPlease note, this plugin requires a TODO server to run locally.";
+    }
+
+    if (!confirm(warning)) {
+        return;
+    }
+
     try {
         if (plugin.api.type === "openapi") {
             const response = await fetch(plugin.api.url);

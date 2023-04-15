@@ -46,7 +46,9 @@ docker-compose up
    plugins demos and guidelines.
 4. Compatibility with other models: Besides GPT-4, Zik also supports GPT4ALL and
    can be used with other models.
-5. Zik prioritizes privacy and security by being a frontend-only app that connects directly to OpenAI's API from your browser. No third-party servers touch your data, and chat history is saved locally with IndexedDB storage.
+5. Zik prioritizes privacy and security by being a frontend-only app that
+   connects directly to OpenAI's API from your browser. No third-party servers
+   touch your data, and chat history is saved locally with IndexedDB storage.
 6. Open-source and extendable: users and developers can easily extend and
    customize the software to suit their specific needs and preferences.
 
@@ -66,7 +68,8 @@ docker-compose up
 
 ### GPT4ALL
 
-To use GPT4All, you will need to run the `zik-gpt4all` server locally. You can learn more about it [here](https://github.com/masasron/zik-gpt4all).
+To use GPT4All, you will need to run the `zik-gpt4all` server locally. You can
+learn more about it [here](https://github.com/masasron/zik-gpt4all).
 
 ![gpt4all](./preview-assets/gpt4all.jpg)
 
@@ -77,3 +80,6 @@ To use GPT4All, you will need to run the `zik-gpt4all` server locally. You can l
 This is still a work in progress, when using plugins, be aware that a lengthy
 system prompt may be sent. Please take the time to thoroughly read and
 understand the plugin code prior to use.
+
+If you like to try the TODO plugin demo, make sure to run the todo
+[server](https://gist.github.com/masasron/6cced78c42b85259143617a87a8de4bf).
