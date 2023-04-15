@@ -75,11 +75,11 @@ learn more about it [here](https://github.com/masasron/zik-gpt4all).
 
 ## Plugins
 
-![plugins](./preview-assets/plugins.jpg)
-
 This is still a work in progress, when using plugins, be aware that a lengthy
 system prompt may be sent. Please take the time to thoroughly read and
 understand the plugin code prior to use.
 
 If you like to try the TODO plugin demo, make sure to run the todo
 [server](https://gist.github.com/masasron/6cced78c42b85259143617a87a8de4bf).
+
+![plugins](./preview-assets/plugins.jpg)
