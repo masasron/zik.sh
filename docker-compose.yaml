@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+  zikchat:
+    build: ./app
+    restart: always
+    ports:
+      - 80:3000
