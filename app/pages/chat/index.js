@@ -545,8 +545,8 @@ export default function Chat() {
                             </div>
                         </div>
                         <div className="welcome-message">
-                            <h1>Welcome to Zik!</h1>
-                            <p>Zik.sh is an <a target="_blank" href="https://github.com/masasron/zik.sh">open source</a> ChatGPT-like user interface, unaffiliated with OpenAI.</p>
+                            <h1>Welcome to Cogit.<strong>ai</strong>!</h1>
+                            <p>Cogit.<strong>ai</strong> is your portal to the future of smart identies.</p>
                         </div>
                     </>}
                     {messages && messages.map((msg, index) => <>
